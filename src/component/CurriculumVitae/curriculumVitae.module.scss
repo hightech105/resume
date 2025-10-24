@@ -1,0 +1,19 @@
+.cv {
+  width: 800px;
+  min-height: 1312px;
+  background: #ffffff;
+  margin: auto;
+  display: flex;
+
+  * {
+    font-size: 0.8rem;
+    font-family: Arial;
+  }
+
+  .sidebar-wrapper {
+    width: 225px;
+  }
+  .content-wrapper {
+    flex: 1;
+  }
+}

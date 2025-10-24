@@ -1,0 +1,55 @@
+{
+  "name": "resume",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://hightech105.github.io/resume/",
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@gsap/react": "^2.1.1",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.13",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@types/react-scroll": "^1.8.10",
+    "classnames": "^2.5.1",
+    "gsap": "^3.12.5",
+    "i18next": "^24.1.2",
+    "i18next-browser-languagedetector": "^8.0.2",
+    "node-sass": "^9.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-i18next": "^15.2.0",
+    "react-router-dom": "^6.26.1",
+    "react-scripts": "5.0.1",
+    "react-scroll": "^1.9.0",
+    "react-toastify": "^11.0.2",
+    "sass": "^1.77.8",
+    "typescript": "^5.7.2",
+    "web-vitals": "^2.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}

@@ -1,0 +1,31 @@
+.wellcome {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .signature {
+    h3 {
+      font-size: 8rem;
+      font-weight: bold;
+      font-family: 'dancing-script';
+      background: linear-gradient(135deg, #1E90FF, #32CD32);
+      background-clip: text;
+      color: transparent;
+    }
+  }
+
+  .greeting {
+    span {
+      font-size: 1.8rem;
+      color: #FFD700;
+      font-weight: 600;
+      margin-bottom: 30px;
+      text-align: center;
+      letter-spacing: 0.5px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+  }
+}

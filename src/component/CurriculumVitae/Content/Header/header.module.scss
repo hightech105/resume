@@ -1,0 +1,45 @@
+.header-wrapper {
+  padding: 65px 60px;
+
+  .header {
+    position: relative;
+
+    h1, .position {
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    .name {
+      font-size: 2.2rem;
+    }
+
+    h1 {
+      font-weight: lighter;
+      color: #4d4d4d;
+      margin-bottom: 18px;
+    }
+
+    .name {
+      color: #002b44;
+      font-weight: bold;
+    }
+
+    .position {
+      font-size: 1.2rem;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 5px;
+      width: 80px;
+      background: #1b6392;
+      border-radius: 5px;
+      bottom: -15px;
+      left: 0;
+    }
+  }
+}

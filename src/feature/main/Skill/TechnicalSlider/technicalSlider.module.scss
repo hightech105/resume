@@ -1,0 +1,38 @@
+@import "theme/sass/theme";
+
+.block {
+  width: 120px;
+  height: 100px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+
+  .img-wrapper {
+    height: 60%;
+    margin-bottom: 10px;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  span {
+    font-weight: bold;
+  }
+}
+
+:global(.theme-dark) {
+  .block {
+    border:$darkBorder;
+    box-shadow: $darkShadow;
+  }
+}
+
+:global(.theme-light) {
+  .block {
+    border: $lightBorder;
+    box-shadow: $lightShadow;
+    background-color: #FFFFFF;
+  }
+}

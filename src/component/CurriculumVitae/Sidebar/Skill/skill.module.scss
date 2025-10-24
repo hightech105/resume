@@ -1,0 +1,14 @@
+.skill .skill-item {
+  margin: 10px 0;
+
+  span {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  ul {
+    list-style-type: circle;
+    padding: 0 1rem;
+    margin-top: 5px;
+  }
+}

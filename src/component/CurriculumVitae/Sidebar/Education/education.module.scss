@@ -1,0 +1,23 @@
+.education-item {
+  & > * {
+    margin: 10px 0;
+  }
+
+  span {
+    font-size: 0.8rem;
+  }
+
+  h3 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+
+  ul {
+    list-style-type: circle;
+    padding: 0 1rem ;
+
+    li {
+      margin: 5px 0;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.project {
+  display: flex;
+
+  .step {
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: #1b6392;
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: "";
+      width: 1px;
+      height: 100%;
+      background-color: #1b6392;
+    }
+  }
+
+  .content {
+    flex: 1;
+    padding: 0 15px 20px 15px;
+
+    .head {
+      display: flex;
+      justify-content: space-between;
+
+      h3 {
+        font-size: 0.8rem;
+      }
+    }
+
+    .role {
+      margin-top: 3px;
+    }
+
+    .description {
+      margin-top: 10px;
+
+      ul {
+        list-style-type: circle;
+        padding: 0.5rem 1rem;
+
+        li {
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}

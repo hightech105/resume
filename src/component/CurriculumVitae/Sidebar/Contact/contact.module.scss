@@ -1,0 +1,18 @@
+.contact ul {
+
+  li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+    width: 100%;
+
+    svg {
+      width: 10px;
+      height: 10px;
+
+      fill: #ffffff;
+    }
+  }
+}

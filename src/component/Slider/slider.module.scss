@@ -1,0 +1,123 @@
+.slider {
+  position: relative;
+  min-height: 500px;
+  margin: 100px 0;
+  
+  &-content {
+    transform-style: preserve-3d;
+
+    .slider-item-wrapper {
+      position: absolute;
+      box-shadow: 2px 2px 8px rgba($color: #000000, $alpha: 0.2);
+      width: 80%;
+      height: 460px;
+      border-radius: 5px;
+      left: 50%;
+      top: 50%;
+      overflow: hidden;
+      transform: translate3d(-50%, 0, -200px) scale(0.2);
+      opacity: 0;
+      transition: all .5s;
+      z-index: 0;
+      user-select: none;
+
+      @media screen and (max-width: 1080px) {
+        width: 98%;
+      }
+
+      & > * {
+        width: 100%;
+        height: 100%;
+      }
+
+      &.item-previous {
+        transform: translate3d(-95%, 15%, -100px) scale(0.3);
+        opacity: .5;
+        z-index: 1;
+
+        @media screen and (max-width: 1080px) {
+          transform: translate3d(-86%, 15%, -100px) scale(0.3);
+        }
+      }
+
+      &.item-current {
+        transform: translate3d(-50%, 0, 0);
+        opacity: 1;
+        z-index: 3;
+      }
+
+      &.item-next {
+        transform: translate3d(-5%, 15%, -100px) scale(0.3);
+        opacity: .5;
+        z-index: 1;
+
+        @media screen and (max-width: 1080px) {
+          transform: translate3d(-14%, 15%, -100px) scale(0.3);
+        }
+      }
+    }
+  }
+
+  .previous-button {
+    left: 10px;
+
+    @media screen and (max-width: 1080px) {
+      left: 0;
+    }
+  }
+
+  .next-button {
+    right: 10px;
+
+    @media screen and (max-width: 1080px) {
+      right: 0;
+    }
+  }
+
+  .previous-button, .next-button {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(0, 0, 85);
+    transition: all .3s;
+    cursor: pointer;
+
+    svg {
+      width: 100px;
+      height: 50px;
+    }
+
+    @media screen and (max-width: 620px) {
+      top: 100%;
+    }
+  }
+
+  .indicator {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 18px;
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      background-color: #c3c3c3;
+      border-radius: 50%;
+      box-shadow: 
+        2px 2px 8px rgba($color: #000000, $alpha: 0.2);
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #737373;
+      }
+
+      &.dot-active {
+        background-color: #5d5d5d;
+      }
+    }
+  }
+}

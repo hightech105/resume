@@ -1,0 +1,117 @@
+@import "theme/sass/theme";
+
+.section {
+  padding: 0 20px;
+
+  &-title {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    span {
+      font-size: 1.5rem;
+    }
+  }
+
+  &-content {
+    .step-wrapper {
+      display: flex;
+      gap: 30px;
+
+      .step-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .dot {
+          position: relative;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          cursor: pointer;
+
+          &-title {
+            position: absolute;
+            background-color: white;
+            text-wrap: nowrap;
+            box-shadow: 2px 2px 8px rgba($color: #000000, $alpha: 0.2);
+            padding: 10px 20px;
+            border-radius: 3px;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            visibility: hidden;
+            opacity: 0;
+
+            &::before {
+              content: "";
+              position: absolute;
+              border-left: 8px solid transparent;
+              border-top: 8px solid white;
+              border-right: 8px solid transparent;
+              bottom: -5px;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+
+          &:hover .dot-title {
+            animation: dotTitleDisplay 0.6s ease-out forwards; 
+          }
+
+          @keyframes dotTitleDisplay {
+            from {
+              top: -40px;
+              transform: translateX(-50%) scale(0);
+              visibility: hidden;
+              opacity: 0;
+            }
+            to {
+              top: -50px;
+              transform: translateX(-50%) scale(1);
+              visibility: visible;
+              opacity: 1;
+            }
+          }
+        }
+
+        .line {
+          width: 2px;
+          height: 100%;
+        }
+      }
+    }
+
+  }
+}
+
+:global(.theme-dark) {
+  .technical-item {
+    box-shadow: $darkShadow;
+  }
+
+  .dot {
+    background: linear-gradient(135deg, #A4C8E1, #A8E6CE);
+  }
+
+  .line {
+    background: linear-gradient(135deg, #A4C8E1, #A8E6CE);
+  }
+}
+
+:global(.theme-light) {
+  .technical-item {
+    box-shadow: $lightShadow;
+  }
+
+  .dot {
+    background: #007BFF;
+  }
+
+  .line {
+    background: #007BFF;
+  }
+}

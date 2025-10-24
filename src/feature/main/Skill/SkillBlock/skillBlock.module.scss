@@ -1,0 +1,114 @@
+@import "theme/sass/theme";
+
+.block {
+    position: relative;
+
+    .layer {
+        border-radius: 20px;
+        padding: 20px;
+        overflow: hidden;
+        backdrop-filter: blur(80px);
+
+        .title {
+            margin-bottom: 20px;
+
+            h3 {
+                font-size: 1.5rem;
+            }
+        }
+
+        .content {
+            text-align: justify;
+            max-height: 220px;
+            overflow: hidden;
+            mask-image: linear-gradient(#000000 50%, transparent);
+
+            &.toggle {
+                max-height: unset;
+                mask-image: none;
+                transition: all 1s;
+            }
+
+            p{
+                font-size: 1.3rem;
+            }
+        }
+
+        .toggle-button {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+
+            span {
+                background: linear-gradient(135deg, #1E90FF, #32CD32);
+                background-clip: text;
+                color: transparent;
+                cursor: pointer;
+                transition: all 0.3s;
+                font-size: 1.3rem;
+                text-transform: uppercase;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+
+
+}
+
+:global(.theme-dark) {
+    .block {
+        .layer {
+            border: $darkBorder;
+            box-shadow: $darkShadow;
+        }
+
+        .light {
+            content: "";
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            background:linear-gradient(135deg, #1E90FF, #32CD32);
+            z-index: -2;
+            animation: lightMove 10s infinite linear;
+
+            &.reverse {
+                animation: lightMove 10s infinite linear reverse;
+            }
+
+            @keyframes lightMove {
+                0% {
+                    top: -3px;
+                    left: -3px;
+                }
+                25% {
+                    top: -3px;
+                    left: calc(100% - 77px);
+                }
+                50% {
+                    top: calc(100% - 77px);
+                    left: calc(100% - 77px);
+                }
+                75% {
+                    top: calc(100% - 77px);
+                    left: -3px;
+                }
+                100% {
+                    top: -3px;
+                    left: -3px;
+                }
+            }
+        }
+    }
+}
+
+:global(.theme-light) {
+    .block .layer{
+        border: $lightBorder;
+        box-shadow: $lightShadow;
+        background-color: #FFFFFF;
+    }
+}

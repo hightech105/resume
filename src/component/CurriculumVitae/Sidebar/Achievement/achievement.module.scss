@@ -1,0 +1,17 @@
+.achievement-item {
+  .company {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  ul {
+    list-style-type: circle;
+    padding: 0 1rem;
+
+    li {
+      white-space: nowrap;
+      margin-top: 10px;
+    }
+  }
+
+}

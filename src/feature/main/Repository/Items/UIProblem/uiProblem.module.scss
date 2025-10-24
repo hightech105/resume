@@ -1,0 +1,64 @@
+.ui-problem {
+  background: url("https://i.pinimg.com/736x/1c/d6/cd/1cd6cd706e4684b181820b9e69867423.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 110px;
+
+  @media screen and (max-width: 620px) {
+    padding: 30px 40px;
+  }
+
+
+  * {
+    color: #000000;
+    font-size: 1.25rem;
+  }
+
+  .title h3{
+    color: rgb(0, 5, 64);
+    font-size: 2rem;
+    margin-bottom: 30px 0;
+  }
+
+  .content .field {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 1080px) {
+      width: 84%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    label {
+      font-weight: 800;
+      width: 15%;
+    }
+
+    .tech-item {
+      display: flex;
+
+      img {
+        height: 50px;
+        margin: 0 20px;
+      }
+    }
+
+    a {
+      color: #3142ff;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        color: #5a68ff;
+      }
+    }
+
+    p {
+      color: #454545;
+      font-style: italic;
+    }
+  }
+}

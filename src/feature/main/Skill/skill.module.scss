@@ -1,0 +1,12 @@
+.skill {
+  .block-wrapper {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1080px)  {
+      flex-direction: column;
+      padding: 20px;
+    }
+  }
+}

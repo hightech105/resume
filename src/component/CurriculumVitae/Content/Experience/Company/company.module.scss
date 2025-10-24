@@ -1,0 +1,17 @@
+.company {
+  &-name {
+    margin-left: 5px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #4d4d4d;
+  }
+
+  &-position {
+    margin-left: 5px;
+    font-size: 0.8rem;
+  }
+
+  &-project {
+    margin-top: 15px;
+  }
+}

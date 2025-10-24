@@ -1,0 +1,56 @@
+.scroll-top-btn {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  animation: display 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  svg {
+    background-color: transparent;
+    fill: #333333;
+    width: 20px;
+    height: 20px;
+  }
+
+  @keyframes display {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+:global(.theme-dark) {
+  .scroll-top-btn {
+    background-color: #E0E0E0;
+
+    svg {
+      fill: #333333;
+    }
+  }
+}
+
+:global(.theme-light) {
+  .scroll-top-btn {
+    background-color: #007BFF;
+
+    svg {
+      fill: #FFFFFF;
+    }
+  }
+}

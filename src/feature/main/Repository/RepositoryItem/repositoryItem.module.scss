@@ -1,0 +1,116 @@
+@import "theme/sass/theme";
+
+.repository-item {
+  display: flex;
+  flex-direction: column;
+  min-height: 150px;
+  border-radius: 4px;
+  padding: 15px;
+  box-sizing: border-box;
+  transition: scale 0.3s;
+
+  &:hover {
+    scale: 1.02;
+
+    .bottom .view-button a svg {
+      visibility: visible;
+    }
+
+    .bottom .view-button a svg.double-left {
+      animation: doubleLeftHoverLoop infinite 1s;
+    }
+
+    .bottom .view-button a svg.double-right {
+      animation: doubleRightHoverLoop infinite 1s;
+    }
+
+    @keyframes doubleLeftHoverLoop {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateX(8px);
+        opacity: 0.4;
+      }
+    }
+
+    @keyframes doubleRightHoverLoop {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateX(-8px);
+        opacity: 0.4;
+      }
+    }
+  }
+
+  .name {
+    margin-bottom: 20px;
+
+    h3 {
+      font-size: 1.4rem;
+    }
+  }
+
+  .description {
+    flex: 1;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .technologies {
+      display: flex;
+      gap: 5px;
+
+      .technology-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 33px;
+        background-color: #ffffff;
+        border-radius: 3px;
+        padding: 3px;
+      }
+    }
+
+    .view-button a {
+      display: flex;
+      gap: 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+
+      svg {
+        visibility: hidden;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+:global(.theme-dark) {
+  .repository-item {
+    border: $darkBorder;
+
+    &, .technology-item {
+      box-shadow: $darkShadow;
+    }
+  }
+}
+
+:global(.theme-light) {
+  .repository-item {
+    border: $lightBorder;
+    box-shadow: $lightShadow;
+    background-color: #FFFFFF;
+  }
+}

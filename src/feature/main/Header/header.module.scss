@@ -1,0 +1,136 @@
+@import "theme/sass/theme";
+
+.header {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  z-index: 100;
+  animation-name: headerAnimation;
+  animation-duration: 1s;
+
+  .signature {
+    padding: 20px 8%;
+    user-select: none;
+    cursor: pointer;
+
+    a {
+      font-size: 2.5rem;
+      font-weight: bold;
+      font-family: 'dancing-script';
+    }
+  }
+
+  .menu {
+    padding: 20px 8%;
+
+    .back {
+      display: none;
+    }
+
+    ul {
+      display: flex;
+
+      li {
+        padding: 20px;
+        cursor: pointer;
+
+        a {
+          font-size: 1.25rem;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}
+
+.header-fixed {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  animation-name: headerFixedAnimation;
+  animation-duration: 1s;
+  backdrop-filter: blur(20px);
+}
+
+@keyframes headerAnimation {
+  0%{
+    opacity: 0;
+  }
+  15%{
+    opacity: 0.25;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
+
+@keyframes headerFixedAnimation {
+  0%{
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  15%{
+    transform: translateY(-15px);
+    opacity: 0.25;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .header {
+    justify-content: center;
+
+    .menu {
+      position: fixed;
+      height: 100vh;
+      top: 0;
+      left: -999px;
+      padding: 0;
+      transition: .5s;
+
+      &.active {
+        left: 0;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+  
+        li {
+          padding: 0;
+          a {
+            width: 225px;
+            padding: 20px;
+            display: block;
+            font-size: 1.25rem;
+            transition: 0.3s;
+
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  :global(.theme-dark) {
+    .header .menu {
+      background: $darkBackgroundColor;
+      box-shadow: $darkShadow;
+    }
+  }
+
+  :global(.theme-light) {
+    .header .menu {
+      background: $lightBackgroundColor;
+      box-shadow: $lightShadow;
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "header": {
+    "menu" : {
+      "home": "Trang chủ",
+      "about": "Giới thiệu",
+      "skill": "Kỹ năng",
+      "experience": "Kinh nghiệm",
+      "repository": "Kho lưu trữ",
+      "contact": "Liên hệ"
+    }
+  },
+  "home": {
+    "greeting": "Xin chào, tôi là",
+    "position": {
+      "top": "Software",
+      "bottom": "Developer"
+    },
+    "maxim": "Người cung cấp các giải pháp chất lượng cao vượt mong đợi và thúc đẩy thành công.",
+    "explore": "Khám phá ngay"
+  },
+  "about": {
+    "title": "GIỚI THIỆU",
+    "content": "Xin chào, tôi là Nguyễn Minh Châu. Tôi là một software developer với 2 năm kinh nghiệm trong việc phát triển và bảo trì các ứng dụng phần mềm. Tôi có nền tảng vững chắc về Java, JavaScript & TypeScript, Python và PHP. Tôi đã làm việc trên các dự án liên quan đến React, Spring boot, Yii2, NestJS. Tôi đam mê tạo ra các giải pháp phần mềm hiệu quả và có thể mở rộng.",
+    "viewCv": "Xem CV"
+  },
+  "skill": {
+    "title": "KỸ NĂNG",
+    "softwareDeveloper": "Là một Software Developer, tôi chuyên thiết kế, mã hóa và bảo trì các ứng dụng phần mềm đáp ứng nhu cầu của người dùng và nâng cao hiệu quả hoạt động. Chuyên môn của tôi trải rộng trên nhiều ngôn ngữ lập trình và khuôn khổ, cho phép tôi tạo ra các giải pháp mạnh mẽ, có thể mở rộng. Tôi thành thạo trong việc cộng tác với các nhóm chức năng chéo để thu thập các yêu cầu, khắc phục sự cố và triển khai các tính năng sáng tạo. Cam kết của tôi đối với các phương pháp hay nhất trong phát triển phần mềm, bao gồm kiểm soát phiên bản, thử nghiệm và lập tài liệu, đảm bảo các sản phẩm chất lượng cao. Tôi đam mê học hỏi liên tục và cập nhật các xu hướng trong ngành để tận dụng các công nghệ mới nhất trong các dự án của mình.",
+    "webDevelopment": "Là một Web Developer, tôi tập trung vào việc tạo ra các ứng dụng web động và linh hoạt, mang lại trải nghiệm người dùng xuất sắc. Chuyên môn của tôi bao gồm HTML, CSS, JavaScript và Java, cùng với các framework như ReactJS và Spring. Tôi có kỹ năng cả trong phát triển front-end và back-end, cho phép tôi xây dựng các giao diện mượt mà và chức năng mạnh mẽ phía server. Làm việc chặt chẽ với các nhà thiết kế và khách hàng, tôi nỗ lực chuyển các yêu cầu thành các trang web hấp dẫn đáp ứng mục tiêu kinh doanh. Tôi đam mê với các tiêu chuẩn web, khả năng tiếp cận và tối ưu hóa hiệu suất, đảm bảo rằng các dự án của tôi không chỉ đẹp mắt mà còn dễ sử dụng trên tất cả các thiết bị.",
+    "showMore": "Xem thêm",
+    "showLess": "Đóng"
+  },
+  "experience": {
+    "title": "Kinh nghiệm",
+    "field": {
+      "projectFeature": "Chức năng",
+      "projectTechnology": "Công nghệ",
+      "teamSize": "Số thành viên",
+      "role": "Vai trò",
+      "issues": "Vấn đề",
+      "result": "Kết quả",
+      "detail": "Chi tiết"
+    },
+    "shoppingSystem": {
+      "summary": "Một dự án được giao bảo mentor dùng để đánh giá năng lực cá nhân của tôi.",
+      "role": "Nhận thiết kế chi tiết từ mentor sau đó tiến hành code và test",
+      "result": "Tôi đã hoàn thành dự án này trong khoảng hai tuần và nhận được phản hồi từ người hướng dẫn rằng tôi học hỏi và thích nghi rất nhanh."
+    },
+    "urikataSystem": {
+      "summary": "Đây là một dự án thực tế, mentor trích một phần chức năng trong dự án và giao cho tôi.",
+      "role": "Tôi nhận được một bộ source với một vài chức năng bị thiếu sót và thiết kế chi tiết của các chức năng này. Tôi đã hoàn thành các chức năng này và giao sản phẩm cuối cùng cho mentor.",
+      "result": "Tôi đã hoàn thiện các dự án này trong khoảng 2 tuần và được nhận vị trí chính thức sớm."
+    },
+    "knowledgePortal": {
+      "summary": "Dự án này cung cấp dịch vụ cho các trường đại học tại Nhật Bản. Vào thời điểm bắt đầu của dự án, tôi đã may mắn được tham gia thử việc để nhận dự án này từ phía khách hàng cùng với 4 đồng nghiệp khác. Chúng tôi đã hoàn thành đợt thử việc và được khách hàng ký hợp đồng.",
+      "role": "Khách hàng sẽ tạo các issue liên quan tới chức năng của hệ thống trên Github Issues. Các issue liên quan đến thiết kế UX UI cũng như logic của các chức năng. Nhiệm vụ của tôi là sẽ hoàn thành các issue này và gửi lại cho khách hàng.",
+      "issues": "Single sign-on với giao thức SAML sử dụng Keycloak IDP, Multiple-language sử dụng thư viện i18next and DeepL API, Content Management System sử dụng EditorJS, Tối ưu xử lý của hệ thống, Cập nhật các phiên bản của thư viện, Thêm mới các tính năng của hệ thống,etc.",
+      "result": "Tôi đã hoàn thành hiệu quả tất cả các nhiệm vụ được giao và nhận được đánh giá tốt từ leader. Khách hàng đã ghi nhận sự đóng góp của chúng tôi và tái khí hợp đồng trong suốt thời gian chúng tôi làm việc. Hơn nữa, khách hàng đã giao cho tôi nhiều dự án quy mô lớn khác."
+    },
+    "knowledgePortalGateway": {
+      "summary": "Đây là một dự án IoT tập trung vào việc sử dụng máy quét mã QR để kiểm soát cửa ra vào.",
+      "role": "Phát triển hoạt động của thiết bị theo thiết kế của khách hàng đã gửi trong Notion.",
+      "result": "Tôi đã hoàn thành các chức năng mà khách hàng yêu cầu."
+    }
+  },
+  "repository": {
+    "title": "Kho lưu trữ",
+    "view": "Xem chi tiết",
+    "more": "Xem thêm",
+    "tetrisGame": "Game Tetris được code bằng Java Swing. Có sử dụng các design pattern như: Observer, Strategy, Factory.",
+    "minesweeperJava": "Game Minesweeper được code bằng Java Swing.",
+    "uiProblems": "Tôi sử dụng repository này để nâng cao kỹ năng về UI.",
+    "leetcodeProblems": "Tôi sử dụng repository này để giải quyết các vấn đề trên leetcode",
+    "algorithms": "Tôi sử dụng repository này để nâng cao kiến thức về cấu trúc dữ liệu và giải thuật.",
+    "kltn": "Đây là đồ án khóa luận tốt nghiệp của tôi."
+  },
+  "contact": {
+    "title": "LIÊN HỆ",
+    "sendFeedback": "GỬI PHẢN HỒI",
+    "requiredError": "Bạn chưa điền {{fieldName}}.",
+    "notValidEmail": "Email không hợp lệ.",
+    "sendingFeedbackMail": "Đang gửi mail phản hồi...",
+    "sentFeedbackMail": "Đã gửi mail phản hồi.",
+    "field": {
+      "name": {
+        "label": "Tên của bạn",
+        "placehoder": "Hãy nhập tên của bạn"
+      },
+      "emailAddress": {
+        "label": "Địa chỉ email"
+      },
+      "subject": {
+        "label": "Tiêu đề",
+        "placehoder": "Hãy nhập tiêu đề"
+      },
+      "message": {
+        "label": "Thông điệp",
+        "placehoder": "Hãy nhập thông điệp của bạn"
+      }
+    }
+  },
+  "footer": {
+    "navigation": {
+      "home": "Trang chủ",
+      "about": "Giới thiệu",
+      "skill": "Kỹ năng",
+      "experience": "Kinh nghiệm",
+      "repository": "Kho lưu trữ",
+      "contact": "Liên hệ"
+    },
+    "information": {
+      "title": "Thông tin",
+      "address": "Tỉnh Bình Định"
+    },
+    "maxim": {
+      "greeting": "Tôi là Châu, một software developer.",
+      "collaborate": "Rất vui được hợp tác với bạn."
+    }
+  }
+}

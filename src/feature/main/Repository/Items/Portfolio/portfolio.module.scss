@@ -1,0 +1,58 @@
+.portfolio {
+  background: url("../../../../../assets/images/resume-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px;
+
+  @media screen and (max-width: 620px) {
+    padding: 40px 40px;
+  }
+
+  * {
+    color: #ffffff;
+    font-size: 1.25rem;
+  }
+
+  .title h3{
+    color: rgb(255, 255, 161);
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+
+  .content .field {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 1080px) {
+      width: 84%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    label {
+      font-weight: 800;
+      width: 15%;
+    }
+
+    img {
+      height: 50px;
+    }
+
+    a {
+      color: #707cff;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        color: #828cff;
+      }
+    }
+
+    p {
+      color: #b7b7b7;
+      font-style: italic;
+    }
+  }
+}

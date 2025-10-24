@@ -1,0 +1,14 @@
+.avatar {
+  background: #000000;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin: 50px auto;
+  border: 5px solid #ffffff;
+  overflow: hidden;
+
+  img {
+    scale: 1.2;
+    transform: translateY(-10px);
+  }
+}

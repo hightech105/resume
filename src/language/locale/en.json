@@ -1,0 +1,116 @@
+{
+  "header": {
+    "menu" : {
+      "home": "Home",
+      "about": "About",
+      "skill": "Skill",
+      "experience": "Experience",
+      "repository": "Repository",
+      "contact": "Contact"
+    }
+  },
+  "home": {
+    "greeting": "Hi there, I'm",
+    "position": {
+      "top": "Full Stack developer",
+      "bottom": "Project Manager"
+    },
+    "maxim": "Who delivers high-quality solutions that exceed expectations and drive success.",
+    "explore": "Explore now"
+  },
+  "about": {
+    "title": "ABOUT",
+    "content": "Hi, I'm Đặng Thiên Hoà. I'm a Full-stack web developer with over 7 years of experience in analyzing, designing, developing, and integrating front-end & back-end-based applications.",
+    "viewCv": "View CV"
+  },
+  "skill": {
+    "title": "SKILL",
+    "softwareDeveloper": "As a Software Developer, I specialize in designing, coding, and maintaining software applications that meet user needs and enhance operational efficiency. My expertise spans various programming languages and frameworks, allowing me to create robust, scalable solutions. I am adept at collaborating with cross-functional teams to gather requirements, troubleshoot issues, and implement innovative features. My commitment to best practices in software development, including version control, testing, and documentation, ensures high-quality deliverables. I am passionate about continuous learning and staying updated with industry trends to leverage the latest technologies in my projects.",
+    "webDevelopment": "As a Web Developer, I focus on creating dynamic and responsive web applications that deliver exceptional user experiences. My expertise includes HTML, CSS, JavaScript and Java, along with frameworks like ReactJS and Spring. I am skilled in both front-end and back-end development, allowing me to build seamless interfaces and robust server-side functionalities. Collaborating closely with designers and clients, I strive to translate requirements into engaging websites that meet business goals. I am passionate about web standards, accessibility, and performance optimization, ensuring that my projects are not only visually appealing but also user-friendly across all devices.",
+    "showMore": "See more",
+    "showLess": "Close"
+  },
+  "experience": {
+    "title": "EXPERIENCE",
+    "field": {
+      "projectFeature": "Project features",
+      "projectTechnology": "Project technologies",
+      "teamSize": "Team size",
+      "role": "Role",
+      "issues": "Issues",
+      "result": "Result",
+      "detail": "Detail"
+    },
+    "knowledgePortal": {
+      "summary": "Led the development of end-to-end web applications, building both front-end and back-end systems for clients in various industries, including e-commerce, finance, and healthcare.",
+      "role": "Managed and mentored a team of junior developers, guiding them in best practices for coding, testing, and project management in an entirely remote work environment.",
+      "issues": "Wrote unit and integration tests using Jest and Mocha, improving code quality and reducing bug rates by 30% over the course of the first year.",
+      "result": "I have effectively completed all the tasks assigned to me and received excellent feedback from my leader. The client acknowledged our contributions and has renewed the contract during our working relationship. Furthermore, the client has entrusted me with additional large-scale projects."
+    },
+    "ftpsoftware": {
+      "summary": "Worked on diverse software development projects, collaborating with cross-functional teams to design, develop, and deploy custom software solutions for international clients in various sectors including finance, healthcare, and retail.",
+      "role": "Actively participated in the entire software development lifecycle, from gathering requirements and writing detailed technical specifications to testing and deploying applications.",
+      "result": "Collaborated closely with senior developers and project managers to ensure high-quality, timely project delivery, consistently meeting client requirements and deadlines."
+    },
+    "tmasolution": {
+      "summary": "Assisted in developing web applications for various clients using frameworks such as React.js, and contributed to back-end API development with Node.js and MongoDB.",
+      "role": "Conducted code reviews, providing constructive feedback to improve code quality and maintainability within the development team.",
+      "result": "Successfully contributed to 3 large-scale projects, helping the team meet deadlines and client expectations."
+    }
+  },
+  "repository": {
+    "title": "REPOSITORY",
+    "view": "View detail",
+    "more": "MORE",
+    "tetrisGame": "Tetris game is created by Java Swing. Using design patterns like: Observer, Strategy, Factory.",
+    "minesweeperJava": "Minesweeper game is created by Java Swing.",
+    "uiProblems": "I'm using this repository to practice UI coding.",
+    "leetcodeProblems": "I'm using this repo to solve problems on LeetCode.",
+    "algorithms": "I'm using this repo to practice data structures and algorithms.",
+    "kltn": "This is my graduation thesis project."
+  },
+  "contact": {
+    "title": "CONTACT",
+    "sendFeedback": "SEND FEEDBACK",
+    "requiredError": "{{fieldName}} is required.",
+    "notValidEmail": "Email is not valid.",
+    "sendingFeedbackMail": "Sending feedback mail...",
+    "sentFeedbackMail": "Sent feedback mail.",
+    "field": {
+      "name": {
+        "label": "Your name",
+        "placehoder": "Please enter your name"
+      },
+      "emailAddress": {
+        "label": "Email address"
+      },
+      "subject": {
+        "label": "Subject",
+        "placehoder": "Please enter your subject"
+      },
+      "message": {
+        "label": "Message",
+        "placehoder": "Please enter your message"
+      }
+    }
+  },
+  "footer": {
+    "navigation": {
+      "title": "Navigation",
+      "home": "Home",
+      "about": "About",
+      "skill": "Skill",
+      "experience": "Experience",
+      "repository": "Repository",
+      "contact": "Contact"
+    },
+    "information": {
+      "title": "Information",
+      "address": "Tuyen Quang Province, Vietnam"
+    },
+    "maxim": {
+      "greeting": "I’m Thien Hoa, a software developer.",
+      "collaborate": "I’m very pleased to collaborate with you."
+    }
+  }
+}

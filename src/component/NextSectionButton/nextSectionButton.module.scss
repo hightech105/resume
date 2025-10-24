@@ -1,0 +1,42 @@
+.next-section-button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+
+  .title {
+    color: rgb(43, 43, 43);
+    font-size: 1.25rem;
+    font-family: 'alegreya';
+    font-weight: bold;
+    opacity: 0.7;
+  }
+  
+  svg {
+    width: 50px;
+    height: 50px;
+    transform: translateY(-30%);
+    fill: #515151;
+    background: transparent;
+    animation-name: buttonLoop;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+}
+
+@keyframes buttonLoop {
+  0% {
+    opacity: 0;
+    transform: translateY(-40%);
+  }
+  60% {
+    opacity: 0.7;
+    transform: translateY(-20%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-40%);
+  }
+}

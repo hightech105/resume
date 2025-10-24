@@ -1,0 +1,47 @@
+@import "theme/sass/theme";
+
+.form-wrapper {
+  width: 450px;
+  padding: 20px;
+  margin: 0 auto 100px auto;
+  border-radius: 5px;
+}
+
+.form-wrapper.loading {
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translate(-20px, -20px);
+
+  }
+}
+
+:global(.theme-dark) {
+  .form-wrapper {
+    border: $darkBorder;
+    box-shadow: $darkShadow;
+  }
+
+  .form-wrapper.loading:before {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+:global(.theme-light) {
+  .form-wrapper {
+    border: $lightBorder;
+    box-shadow: $lightShadow;
+
+    &, * {
+      background-color: #FFFFFF;
+    }
+  }
+  .form-wrapper.loading:before {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+}

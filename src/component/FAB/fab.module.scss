@@ -1,0 +1,85 @@
+.fab-container {
+  * {
+    background-color: transparent;
+  }
+
+  .fab {
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .fab-menu {
+    position: fixed;
+    bottom: 96px;
+    left: 23px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 999;
+
+    .fab-child {
+      display: flex;
+      justify-content: flex-end;
+
+      .fab-child-container {
+        position: relative;
+
+        .fab-child-button {
+          color: white;
+          border: none;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          cursor: pointer;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .fab-submenu {
+          position: absolute;
+          left: 55px;
+          bottom: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+      }
+    }
+  }
+}
+
+:global(.theme-dark) {
+  .fab, .fab-child-button {
+    background: linear-gradient(to right, #007BFF, #4CAF50);
+
+    &:hover {
+      background: linear-gradient(to right, #0056b3, #388e3c);
+    }
+  }
+}
+
+:global(.theme-light) {
+  .fab, .fab-child-button {
+    background: linear-gradient(to right, #004080, #007f5c);
+
+    &:hover {
+      background: linear-gradient(to right, #0056b3, #388e3c);
+    }
+  }
+}

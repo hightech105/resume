@@ -1,0 +1,60 @@
+.leet-code-problem {
+  background: url("../../../../../assets/images/leetcode-problem-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px;
+  
+  @media screen and (max-width: 620px) {
+    padding: 80px 40px;
+  }
+
+  * {
+    color: #000000;
+    font-size: 1.25rem;
+  }
+
+  .title h3{
+    color: rgb(154, 74, 0);
+    font-size: 2rem;
+    margin-bottom: 30px 0;
+  }
+
+  .content .field {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 1080px) {
+      width: 84%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    label {
+      font-weight: 800;
+      width: 15%;
+    }
+
+    img {
+      height: 50px;
+    }
+
+    a {
+      color: #3142ff;
+      cursor: pointer;
+      transition: 0.3s;
+      text-wrap: wrap;
+
+      &:hover {
+        color: #5a68ff;
+      }
+    }
+
+    p {
+      color: #454545;
+      font-style: italic;
+      text-wrap: wrap;
+    }
+  }
+}

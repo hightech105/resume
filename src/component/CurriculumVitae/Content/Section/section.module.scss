@@ -1,0 +1,21 @@
+.section {
+  max-width: 100%;
+  padding: 0 20px;
+  margin: 15px 0;
+  box-sizing: border-box;
+
+  .title {
+    border-bottom: 1px solid #1b6392;
+    margin-bottom: 10px;
+
+    h3 {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      color: #002b44;
+    }
+  }
+
+  .content {
+    min-width: 185px;
+  }
+}

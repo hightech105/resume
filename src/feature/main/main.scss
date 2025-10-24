@@ -1,0 +1,84 @@
+@import url(assets/sass/contact.scss);
+@import "theme/sass/theme";
+
+.section {
+  padding: 20px 18%;
+  overflow: hidden;
+
+  .title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 100px 0;
+
+    h3 {
+      font-size: 3rem;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: "alegreya";
+    }
+
+    svg {
+      font-size: 30px;
+    }
+
+    .line {
+      height: 2px;
+      background-color: rgba($color: #000000, $alpha: 0.2);
+    }
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .section {
+    padding: 20px 0;
+  }
+}
+
+.theme-dark {
+  .main {
+    background-color: $darkBackgroundColor;
+
+    .section .title {
+      h3 {
+        background: linear-gradient(135deg, #1E90FF, #32CD32);
+        background-clip: text;
+        color: transparent;
+      }
+
+      svg {
+        fill: $darkLineColor;
+      }
+
+      .line {
+        background-color: $darkLineColor;
+        box-shadow: $darkShadow;
+      }
+    }
+  }
+}
+
+.theme-light {
+  .main {
+    background-color: $lightBackgroundColor;
+
+    .section .title {
+      h3 {
+        background: $lightTitleColor;
+        background-clip: text;
+        color: transparent;
+      }
+
+      svg {
+        fill:  $lightLineColor;
+      }
+
+      .line {
+        background-color: $lightLineColor;
+        box-shadow: $lightShadow;
+      }
+    }
+  }
+}

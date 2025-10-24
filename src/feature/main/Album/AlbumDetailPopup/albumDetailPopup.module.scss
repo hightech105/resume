@@ -1,0 +1,68 @@
+.album-detal-popup {
+  min-width: 1300px;
+
+  &-content {
+    padding: 20px;
+
+    .album-detail {
+      height: 500px;
+      box-shadow: 
+          1px 1px 2px rgba($color: #000000, $alpha: 0.2),
+          -1px -1px 2px rgba($color: #000000, $alpha: 0.2);
+      
+
+      img {
+        max-width: 1300px;
+        height: 100%;
+      }
+
+      img.active {
+        animation-name: view;
+        animation-duration: 0.5s;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+        @keyframes view {
+          0% {
+            transform: scale(0);
+          }
+          100%{
+            transform: scale(1);
+          }
+        }
+      }
+    }
+
+    .album-list {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+      box-shadow: 
+        2px 2px 3px rgba($color: #000000, $alpha: 0.3),
+        -2px -2px 3px rgba($color: #000000, $alpha: 0.3);
+      padding: 20px 40px;
+      justify-content: center;
+      
+      &-item {
+        height: 125px;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 
+          1px 1px 2px rgba($color: #000000, $alpha: 0.2),
+          -1px -1px 2px rgba($color: #000000, $alpha: 0.2);
+        transition: 0.3s;
+        cursor: pointer;
+
+        &.active, &:hover {
+          opacity: 0.8;
+        }
+        
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,67 @@
+@import "theme/sass/theme";
+
+.step-content {
+  padding: 0 0 50px 0;
+
+  * {
+    font-size: 1.2rem;
+  }
+
+  .head {
+    margin-bottom: 20px;
+
+    .project-name {
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+    }
+
+    .position {
+      opacity: 0.8;
+    }
+  }
+
+  .summary {
+    margin-bottom: 20px;
+  }
+
+  .detail ul {
+    list-style: circle;
+    padding: 1rem;
+
+    li .row{
+      display: flex;
+      margin: 1rem 0;
+      line-height: 2rem;
+
+      label {
+        display: block;
+        width: 200px;
+      }
+
+      span {
+        display: block;
+        flex: 1;
+
+        img {
+          background: #FFFFFF;
+          margin-right: 10px;
+          border-radius: 5px;
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+:global(.theme-dark) {
+  .detail ul li .row img {
+    box-shadow: $darkShadow;
+  }
+}
+
+:global(.theme-light) {
+  .detail ul li .row img {
+    box-shadow: $lightShadow;
+  }
+}
